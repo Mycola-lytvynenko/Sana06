@@ -1,0 +1,228 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/Christmas_night_scene_featuring_Santa.jpg') 50% 50% /cover no-repeat;
+}
+    
+.wrapper .header {
+    width: 100%;
+}
+/*header */
+.header {
+    margin-bottom: 15px;
+    box-shadow: -1px -2px 20px 9px #000000b8;
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black; /* Default color */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #56e454;
+    font-weight: 500;
+}
+::selection{
+    background:#56e454;
+}
+.navbar-brand {
+    padding: 0;
+}
+/*main */
+.main {
+    flex: 1 1 auto;
+   
+}
+/*for img logo*/
+.container-fluid > a {
+    display:block;
+    width: 80px;
+    padding:5px 0 ;
+}
+.container-fluid > a > img{
+    max-width:100%;
+    border-radius:50%;
+}
+/*footer */
+.footer {
+    background: #fff;
+    box-shadow: -1px -2px 20px 9px #000000b8;
+}
+.footer a{
+    color:#000;
+}
+.footer  a:hover {
+    color: #56e454;
+    font-weight: 500;
+}
+/*privacy page*/
+
+.privacy__text {
+    font-weight: 600;
+    font-size: calc(14px + 6 * calc(100vw - (320px)) / 1120);
+    color: #0d2b31e8;
+}
+/*for contacts page*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: rgba(169, 233, 240, 0.9921568627);
+    background-color: rgba(114, 147, 176, 0.6078431373);
+    font-size: calc(14px + 6 * calc(100vw - (320px)) / 1120);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contact__header {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.contact__info {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #fff;
+}
+
+.contact__raindeers {
+    border-radius: 5px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 25px;
+}
+
+.contact__endtext {
+    color: #fff;
+}
+
+.header-contact__title {
+    font-size: calc(25px + 25 * calc(100vw - (320px)) / 1120);
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #19f4d7;
+}
+
+.header-contact__welcome {
+    font-size: calc(20px + 10 * calc(100vw - (320px)) / 1120);
+    color: rgba(169, 233, 240, 0.9921568627);
+}
+
+.info-contact {
+    display: flex;
+    max-width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    border-radius: 5px;
+    padding: 20px;
+    
+    
+}
+
+.info-contact__address {
+    margin-bottom: 20px;
+}
+
+.info-contact__address span {
+    margin-bottom: 5px;
+}
+
+.info-contact__tel {
+    margin-bottom: 20px;
+}
+
+.raindeer__title {
+    font-size: calc(25px + 15 * calc(100vw - (320px)) / 1120);
+    margin-bottom: 20px;
+}
+
+.raindeer-mailboxes__item {
+    list-style:none;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.raindeer-mailboxes__item span{
+    color:#fff;
+}
+
+/*for about page*/
+.about-santa {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: rgba(169, 233, 240, 0.9921568627);
+    background-color: rgba(114, 147, 176, 0.8078431373);
+    font-size: calc(14px + 6 * calc(100vw - (320px)) / 1120);
+    border-radius:10px;
+    padding:20px;
+}
+.about-santa__header, .about-santa__raindeers {
+    margin-bottom: 20px;
+}
+.about-santa__header, .about-santa__raindeers, .about-santa__prepare {
+    border-radius: 5px;
+    border-bottom: 2px solid #fff;
+}
+.title {
+    font-size: calc(25px + 20 * calc(100vw - (320px)) / 1120);
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #19f4d7;
+}
+
+.subtitle {
+    font-size: calc(20px + 5 * calc(100vw - (320px)) / 1120);
+    color: rgba(169, 233, 240, 0.9921568627);
+}
+
+.list li {
+    text-align: left;
+    margin-bottom: 15px;
+    list-style:none;
+}
+.list span{
+    color:#fff;
+}
+/*for santa`s raindeer*/
+
+.table-color {
+    color: rgba(169, 233, 240, 0.9921568627);
+}
+.link {
+    color: #000;
+    font-weight:600;
+    text-decoration: none;
+}
+
+.input{
+    min-width: 200px;
+    margin-bottom:15px;
+}
